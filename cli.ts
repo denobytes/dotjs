@@ -1,5 +1,5 @@
 import { parse as argparse } from "https://deno.land/std@0.181.0/flags/mod.ts";
-import { Graphviz } from "npm:@hpcc-js/wasm@2.13.0/graphviz";
+import { Graphviz } from "npm:@hpcc-js/wasm@2.14.0/graphviz";
 
 const args = argparse(Deno.args, {
   boolean: [
@@ -27,7 +27,7 @@ Options:
   Examples:
   ${commandName} sample.dot
   ${commandName} -o sample.svg sample.dot
-  cat 'digraph G { Hello -> World }' | ${commandName}
+  echo 'digraph G { Hello -> World }' | ${commandName}
 `;
 
 // parse args
