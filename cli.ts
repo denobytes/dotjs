@@ -1,5 +1,5 @@
 import { parse as argparse } from "https://deno.land/std@0.181.0/flags/mod.ts";
-import { Graphviz } from "npm:@hpcc-js/wasm@2.14.0/graphviz";
+import { Graphviz } from "npm:@hpcc-js/wasm@2.15.1/graphviz";
 
 const args = argparse(Deno.args, {
   boolean: [
